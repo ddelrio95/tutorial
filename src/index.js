@@ -31,6 +31,6 @@ function Greeting() {
   )
 }
 
-const Person = () => {}
+const Person = ()
 
 ReactDom.render(<Greeting />, document.getElementById('root'))
