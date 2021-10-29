@@ -1,17 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDom from 'react-dom'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// stateless functional component
+// always returns return JSX
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// JSX Rules
+// return single element
+// div / section / article or Fragment
+// use camelCase for html attribute
+// className instead of class
+// close every element
+// formatting
+
+// const Gretting = () => {
+//  return React.createElement(
+//    'div',
+//     {},
+//      React.createElement('h1', {}, 'hello world')
+//  );
+// };
+
+// Nested Components, React Tools
+
+function Greeting() {
+  return (
+    <div>
+      <h2>Dario del Rio</h2>
+      <p>this is my message</p>
+    </div>
+  )
+}
+
+const Person = () => {}
+
+ReactDom.render(<Greeting />, document.getElementById('root'))
